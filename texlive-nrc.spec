@@ -1,3 +1,9 @@
+# revision 18087
+# category Package
+# catalog-ctan /macros/latex/contrib/nrc
+# catalog-date 2007-01-12 08:59:52 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-nrc
 Version:	20070112
 Release:	1
@@ -53,6 +59,7 @@ for journals (such as the Canadian Journal of Physics, post-
 #- source
 %doc %{_texmfdistdir}/source/latex/nrc/nrc.dtx
 %doc %{_texmfdistdir}/source/latex/nrc/nrc.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +70,5 @@ for journals (such as the Canadian Journal of Physics, post-
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
