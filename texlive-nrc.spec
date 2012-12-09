@@ -59,3 +59,17 @@ for journals (such as the Canadian Journal of Physics, post-
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070112-2
++ Revision: 754443
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070112-1
++ Revision: 719137
+- texlive-nrc
+- texlive-nrc
+- texlive-nrc
+- texlive-nrc
+
