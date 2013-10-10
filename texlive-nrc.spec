@@ -1,12 +1,13 @@
-# revision 18087
+# revision 29027
 # category Package
 # catalog-ctan /macros/latex/contrib/nrc
-# catalog-date 2007-01-12 08:59:52 +0100
+# catalog-date 2012-11-05 18:31:34 +0100
 # catalog-license lppl
-# catalog-version undef
+# catalog-version 2.01
 Name:		texlive-nrc
-Version:	20070112
-Release:	2
+Epoch:		1
+Version:	2.01
+Release:	1
 Summary:	Class for the NRC technical journals
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nrc
@@ -22,10 +23,8 @@ Requires(post):	texlive-kpathsea
 %description
 Macros, and some documentation, for typesetting papers for
 submission to journals published by the National Research
-Council of Canada. The macros are provided as a pair of
-classes, one for journals printed in two columns and the other
-for journals (such as the Canadian Journal of Physics, post-
-1997) which are printed in a single-column format.
+Council Research Press. At present, only nrc2.cls (for two-
+column layout) should be used.
 
 %post
     %{_sbindir}/texlive.post
@@ -41,10 +40,9 @@ for journals (such as the Canadian Journal of Physics, post-
 %{_texmfdistdir}/tex/latex/nrc/nrc1.sty
 %{_texmfdistdir}/tex/latex/nrc/nrc2.cls
 %{_texmfdistdir}/tex/latex/nrc/nrc2.sty
+%doc %{_texmfdistdir}/doc/latex/nrc/00-2013-feb-authors.txt
 %doc %{_texmfdistdir}/doc/latex/nrc/README
-%doc %{_texmfdistdir}/doc/latex/nrc/authors.txt
 %doc %{_texmfdistdir}/doc/latex/nrc/userguide.pdf
-%doc %{_texmfdistdir}/doc/latex/nrc/userguide.ps.gz
 %doc %{_texmfdistdir}/doc/latex/nrc/userguide.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/nrc/nrc.dtx
@@ -59,17 +57,3 @@ for journals (such as the Canadian Journal of Physics, post-
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070112-2
-+ Revision: 754443
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070112-1
-+ Revision: 719137
-- texlive-nrc
-- texlive-nrc
-- texlive-nrc
-- texlive-nrc
-
