@@ -7,7 +7,7 @@
 Name:		texlive-nrc
 Epoch:		1
 Version:	2.01
-Release:	3
+Release:	4
 Summary:	Class for the NRC technical journals
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nrc
