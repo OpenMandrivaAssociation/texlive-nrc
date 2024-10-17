@@ -4,7 +4,7 @@ Version:	29027
 Release:	2
 Summary:	Class for the NRC technical journals
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/nrc
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/nrc
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nrc.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/nrc.doc.r%{version}.tar.xz
